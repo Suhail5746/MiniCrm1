@@ -1,0 +1,19 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "A simple contact management feature of a CRM application, allowing users to add, view, edit, and delete contacts.",
+  "main": "server/server.js",
+  "scripts": {
+  "start": "node server/server.js",
+  "dev": "nodemon server/server.js"
+},
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mongoose": "^8.8.1"
+  }
+}
