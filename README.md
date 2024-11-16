@@ -33,3 +33,28 @@ npm install
 
 Start the development server:
 npm start
+
+---------------------------------------------------------------
+Challenges and Solutions
+
+1. Pagination and Sorting
+Challenge: Implementing sorting and pagination in the table while maintaining a seamless user experience.
+Solution: Used Material-UI’s TablePagination and TableSortLabel components to handle sorting and pagination efficiently. Adjusted the backend to accept query parameters for paginated responses.
+
+2. Error Handling in API Requests
+Challenge: Handling validation errors, duplicate entries, and connection issues.
+Solution: Implemented validation middleware in Express to ensure required fields are provided.
+Used MongoDB’s unique constraint on the email field to prevent duplicates.
+Added error handling with descriptive messages for each failure scenario.
+
+4. State Management in the Frontend
+Challenge: Keeping the contact list updated across CRUD operations.
+Solution: Used React’s useState and useEffect hooks to refresh the contact list after every successful operation.
+
+6. Dynamic Editing
+Challenge: Prefilling the form with existing data when editing a contact.
+Solution: Passed the selected contact as a prop to the ContactForm component and used useEffect to prepopulate the form fields.
+
+8. Styling Consistency
+Challenge: Maintaining a consistent and professional UI.
+Solution: Used Material-UI for all components to ensure uniform styling, with custom tweaks for responsiveness and usability.
